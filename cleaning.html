@@ -12,7 +12,7 @@
       "@context": "http://schema.org",
       "@type": "LocalBusiness",
       "name": "Чистка подушок та ковдр",
-      "image": "your-emblem.jpg",
+      "image": "cleaning-service-website/your-emblem.jpg",
       "telephone": "+38095060260",
       "address": {
         "@type": "PostalAddress",
@@ -22,15 +22,6 @@
       },
       "description": "Професійна чистка подушок у Луцьку. Три етапи очистки для ідеального результату."
     }
-    </script>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-XXXXX-Y');
     </script>
 
     <style>
@@ -49,25 +40,39 @@
         }
         header img {
             position: absolute;
-            top: 20px;
+            top: 10px;
             left: 20px;
-            height: 60px;
+            height: 90px; /* Bigger size for emblem */
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
-            color: #0056b3;
+            color: black; /* Black font */
+            font-weight: bold;
         }
         header p {
             margin: 5px 0;
-            font-size: 1.2em;
-            color: #333;
+            font-size: 1.5em;
+            color: #800000; /* Burgundy color */
+            font-weight: bold;
+            text-align: center;
+        }
+        /* Mobile responsiveness fix for the emblem */
+        @media only screen and (max-width: 600px) {
+            header img {
+                height: 70px;
+            }
+            header h1 {
+                font-size: 2em; /* Adjust for mobile size */
+                padding-left: 100px; /* Space for emblem */
+            }
         }
         .centered-text {
             text-align: center;
-            font-size: 2em;
-            color: #ffd700; /* Yellow */
-            text-shadow: 2px 2px #0056b3; /* Blue shadow for eye-catching effect */
+            font-size: 2.2em; /* Larger font size */
+            color: black; /* Black color */
+            font-weight: bold; /* Bold text */
+            text-decoration: underline; /* Underlining */
             margin-top: 20px;
         }
         .content {
@@ -113,11 +118,11 @@
 <body>
 
 <header>
-    <!-- Image path -->
-    <img src="your-emblem.jpg" alt="Company Emblem">
-    <h1>Чистка подушок, пошиття та чистка пухових ковдр</h1>
-    <p>м. Луцьк, вул. Стрілецька 59/3</p>
-    <p>Мобільний телефон: <a href="tel:+38095060260" style="color:#333;">+38095060260</a></p>
+    <!-- Ensure the image path is correct -->
+    <img src="cleaning-service-website/your-emblem.jpg" alt="">
+    <h1>Чистка подушок та пухових ковдр</h1>
+    <p>Луцьк, вул. Стрілецька 59/3</p>
+    <p>Т. +38095060260</p>
 </header>
 
 <div class="centered-text">
@@ -125,10 +130,14 @@
 </div>
 
 <div class="content">
-    <!-- Corrected image paths -->
-    <img src="cleaning-process1.jpg" alt="Cleaning Process 1" loading="lazy">
-    <img src="cleaning-process2.jpg" alt="Cleaning Process 2" loading="lazy">
-    <img src="cleaning-process3.jpg" alt="Cleaning Process 3" loading="lazy">
+    <img src="cleaning-service-website/cleaning-process1.jpg" alt="" loading="lazy">
+    <img src="cleaning-service-website/cleaning-process2.jpg" alt="" loading="lazy">
+    <img src="cleaning-service-website/cleaning-process3.jpg" alt="" loading="lazy">
+</div>
+
+<div class="content">
+    <img src="cleaning-service-website/delivery-process1.jpg" alt="" loading="lazy">
+    <img src="cleaning-service-website/comforter-process1.jpg" alt="" loading="lazy">
 </div>
 
 <div class="centered-text">
