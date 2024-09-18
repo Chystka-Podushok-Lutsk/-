@@ -1,19 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Професійна чистка подушок і ковдр у Луцьку. Екологічна чистка з доставкою та трьома рівнями очистки. Зателефонуйте для замовлення!">
+    <meta property="og:title" content="Чистка подушок та пухових ковдр у Луцьку">
+    <meta property="og:description" content="Професійна чистка подушок і ковдр у Луцьку. Екологічна трирівнева очистка з доставкою">
+    <meta property="og:image" content="https://chystka-podushok-lutsk.github.io/-/your-emblem.jpg">
+    <meta property="og:url" content="https://chystka-podushok-lutsk.github.io">
     <title>Професійна високоякісна чистка та відновлення подушок і пухових ковдр у Луцьку | Екологічна, багаторівнева чистка із доставкою</title>
 
     <style>
         /* Universal Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f7f7f7;
             color: #333;
+            line-height: 1.6; /* Improved readability */
         }
         header {
             background-color: #f0e68c;
@@ -29,7 +34,7 @@
         }
         header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.5em; /* Responsive font sizes */
             color: black;
             font-weight: bold;
         }
@@ -53,6 +58,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
             padding: 20px;
+            gap: 15px;
         }
 
         .content img {
@@ -79,11 +85,16 @@
             text-decoration: none;
             font-size: 1.5em;
             text-align: center;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Enhanced CTA visibility */
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .cta-button:hover {
             background-color: #003f82;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Hover shadow effect */
         }
 
         footer {
@@ -112,39 +123,128 @@
                 padding: 10px 20px;
             }
         }
+
+        /* Text Animations */
+        h1, h2, p {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        h1.in-view, h2.in-view, p.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Background color contrast for sections */
+        section {
+            padding: 50px 0;
+        }
+
+        section:nth-child(even) {
+            background-color: #e0f7fa;
+        }
+
+        section:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 50%;
+            display: none;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="https://chystka-podushok-lutsk.github.io/-/your-emblem.jpg" alt="Логотип Чистка подушок">
+    <img src="https://chystka-podushok-lutsk.github.io/-/your-emblem.jpg" alt="ЧИСТКА-ПОДУШОК">
     <h1>Чистка подушок та пухових ковдр у Луцьку</h1>
     <p>Луцьк, вул. Стрілецька 59/3</p>
     <p>Т. +38095060260</p>
 </header>
 
-<h2 class="centered-text">ТРИ РІВНІ ОЧИСТКИ</h2>
+<section>
+    <h2 class="centered-text">ТРИ РІВНІ ОЧИСТКИ</h2>
+    <div class="content">
+        <figure>
+            <img src="https://chystka-podushok-lutsk.github.io/-/cleaning-process1.jpg" alt="Етап 1: Провіювання пера" loading="lazy">
+            <figcaption>Етап 1: Провіювання пера</figcaption>
+        </figure>
+        <figure>
+            <img src="https://chystka-podushok-lutsk.github.io/-/cleaning-process2.jpg" alt="Етап 2: Антибактеріальне кварцування" loading="lazy">
+            <figcaption>Етап 2: Антибактеріальне кварцування</figcaption>
+        </figure>
+        <figure>
+            <img src="https://chystka-podushok-lutsk.github.io/-/cleaning-process3.jpg" alt="Етап 3: Екологічна дезинфекція" loading="lazy">
+            <figcaption>Етап 3: Екологічна дезинфекція</figcaption>
+        </figure>
+    </div>
+</section>
 
-<div class="content">
-    <img src="https://chystka-podushok-lutsk.github.io/-/cleaning-process1.jpg" alt="Процес чистки подушок 1" loading="lazy">
-    <img src="https://chystka-podushok-lutsk.github.io/-/cleaning-process2.jpg" alt="Процес чистки подушок 2" loading="lazy">
-    <img src="https://chystka-podushok-lutsk.github.io/-/cleaning-process3.jpg" alt="Процес чистки подушок 3" loading="lazy">
-</div>
+<section>
+    <div class="content">
+        <figure>
+            <img src="https://chystka-podushok-lutsk.github.io/-/delivery-process1.jpg" alt="Ми забезпечуємо доставку" loading="lazy">
+            <figcaption>Ми забезпечуємо доставку</figcaption>
+        </figure>
+        <figure>
+            <img src="https://chystka-podushok-lutsk.github.io/-/comforter-process1.jpg" alt="Чистка та перешиття ковдр" loading="lazy">
+            <figcaption>Чистка та перешиття ковдр</figcaption>
+        </figure>
+    </div>
+</section>
 
-<div class="content">
-    <img src="https://chystka-podushok-lutsk.github.io/-/delivery-process1.jpg" alt="Процес доставки постільної білизни" loading="lazy">
-    <img src="https://chystka-podushok-lutsk.github.io/-/comforter-process1.jpg" alt="Процес чистки ковдр" loading="lazy">
-</div>
+<a href="#" class="back-to-top">↑</a>
 
-<h2 class="centered-text">
-    <a href="tel:+38095060260" class="cta-button">
-        Зателефонуйте зараз,<br>отримайте безкоштовну консультацію
-    </a>
-</h2>
+<a href="tel:+38095060260" class="cta-button">Зателефонуйте зараз, отримайте безкоштовну консультацію</a>
+
+<!-- Google Maps Widget -->
+<section>
+    <iframe src="https://maps.app.goo.gl/qkPPtWXvtA9FnGtX9" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
 
 <footer>
     <p>&copy; 2024 Чистка подушок. Всі права захищені.</p>
 </footer>
+
+<script>
+    // Scroll-based animations for titles and text
+    const elements = document.querySelectorAll('h1, h2, p');
+
+    function handleScroll() {
+        elements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.classList.add('in-view');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Back-to-Top Button Visibility
+    const backToTopButton = document.querySelector('.back-to-top');
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    };
+
+    backToTopButton.onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
 
 </body>
 </html>
