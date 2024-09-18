@@ -10,6 +10,16 @@
     <meta property="og:url" content="https://chystka-podushok-lutsk.github.io">
     <title>Професійна високоякісна чистка та відновлення подушок і пухових ковдр у Луцьку | Екологічна, багаторівнева чистка із доставкою</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16694097006"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-16694097006');
+    </script>
+
     <style>
         /* Universal Styles */
         body {
@@ -210,43 +220,43 @@
 <!-- Google Maps Widget -->
 <section>
    <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.93333091076!2d25.330768275803234!3d50.75826986515352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472599e1e1fd637b%3A0xeb9656e401ddab21!2z0LLRg9C70LjRhtGPINCh0YLRgNGW0LvQtdGG0YzQutCwLCA1OSwg0JvRg9GG0YzQuiwg0JLQvtC70LjQvdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA0MzAwMA!5e0!3m2!1suk!2sua!4v1726647914878!5m2!1suk!2sua"
-    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.93333091076!2d25.330768275803234!3d50.75826986515352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472613353338d075%3A0xb33de621d75f0730!2s59%20Vulytsya%20Striletska%2C%20Lutsk%2C%20Volynska%20oblast%2C%2043000!5e0!3m2!1sen!2sua!4v1695123427364!5m2!1sen!2sua" 
+    width="100%" 
+    height="400" 
+    frameborder="0" 
+    style="border:0;" 
+    allowfullscreen="" 
+    aria-hidden="false" 
+    tabindex="0"></iframe>
 </section>
 
 <footer>
-    <p>&copy; 2024 Чистка подушок. Всі права захищені.</p>
+    &copy; 2024 ЧИСТКА-ПОДУШОК Луцьк
 </footer>
 
 <script>
-    // Scroll-based animations for titles and text
-    const elements = document.querySelectorAll('h1, h2, p');
+    // Scroll to Top Button
+    window.onscroll = function() {
+        var backToTop = document.querySelector('.back-to-top');
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTop.style.display = "block";
+        } else {
+            backToTop.style.display = "none";
+        }
+    };
+    document.querySelector('.back-to-top').addEventListener('click', function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
 
-    function handleScroll() {
-        elements.forEach(el => {
-            const rect = el.getBoundingClientRect();
+    // Lazy loading animation trigger on scroll
+    window.addEventListener('scroll', function() {
+        document.querySelectorAll('h1, h2, p').forEach(function(el) {
+            var rect = el.getBoundingClientRect();
             if (rect.top < window.innerHeight) {
                 el.classList.add('in-view');
             }
         });
-    }
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Back-to-Top Button Visibility
-    const backToTopButton = document.querySelector('.back-to-top');
-    window.onscroll = function() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            backToTopButton.style.display = 'block';
-        } else {
-            backToTopButton.style.display = 'none';
-        }
-    };
-
-    backToTopButton.onclick = function() {
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    };
+    });
 </script>
 
 </body>
